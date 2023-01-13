@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-configration>
+
+<session-factory>
+<properties name="show_sql">true</properties>
+<properties name="hbm2ddl.auto">update</properties>
+<properties name="dialect">org.hibernate.dialect.Oracle90Dialect</properties>
+<properties name="connection.url">jdbc:oracle:thin:@localhost:1521:xe</properties>
+<properties name="connection.username">root</properties>
+<properties name="connection.password">root</properties>
+<properties name="connection.driver_class">oracle.jdbc.driver.OracleDriver</properties>
+<properties name="cache.use_second_level_cache">true</properties>
+<properties name="cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory</properties>
+<properties name="com.hibernate.cache.Employe">true</properties>
+</session-factory>
+</hibernate-configration>
